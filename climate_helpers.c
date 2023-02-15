@@ -16,7 +16,7 @@ int *getMinMaxPositionByAngle(int angle, int thermostat_radius) {
   return r;
 }
 
-float getAngle(int *p1, int *p2) {
+float getAngle(int p1[], int p2[]) {
   int center = 0;
   float pi = 22.0f / 7.0;
 
