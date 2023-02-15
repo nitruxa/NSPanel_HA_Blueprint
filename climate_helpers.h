@@ -1,9 +1,11 @@
 /* climate_helpers.h */
-
-extern int *getMinMaxPositionByAngle(int, int);
-extern float getAngle(int [], int []);
-extern float getFullAngle(int, int);
-extern float getThermostatRelativePosition(int, int, int, int);
-extern float getTemperature(float, int, int, float);
-extern int *getCoordinatesOnThermostat(int, int, int, int, int);
-extern int *getCoordinatesByTemperature(float, float, float, int, int, int);
+#ifndef CLIMATE_HELPERS_H
+#define CLIMATE_HELPERS_H
+int *getMinMaxPositionByAngle(int, int);
+float getAngle(int[], int[]);
+float getFullAngle(int, int);
+float getThermostatRelativePosition(int, int, int, int);
+float getTemperature(float, int, int, float);
+int *getCoordinatesOnThermostat(int, int, int, int, int);
+int *getCoordinatesByTemperature(float, float, float, int, int, int);
+#endif
