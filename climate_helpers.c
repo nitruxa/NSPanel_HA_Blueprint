@@ -74,7 +74,7 @@ float getTemperature(float thermostatRelativePosition, int minT, int maxT,
 
 int *getCoordinatesOnThermostat(int x, int y, int radius, int minX, int minY) {
   static int r[2] = {0, 0};
-  double hypotenuse = sqrt(double(x * x + y * y));
+  double hypotenuse = sqrt(x * x + y * y);
   double hypDiv = radius / (hypotenuse - radius);
 
   float coordTX = (0 + hypDiv * x) / (1 + hypDiv);
@@ -89,8 +89,8 @@ int *getCoordinatesOnThermostat(int x, int y, int radius, int minX, int minY) {
     }
   }
 
-  r[0] = int(coordTX);
-  r[1] = int(coordTY);
+  r[0] = coordTX;
+  r[1] = coordTY;
 
   return r;
 }
