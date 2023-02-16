@@ -1,6 +1,6 @@
 /* climate_helpers.c */
 
-#include "climate_helpers.h"
+#include <climate_helpers.h>
 #include <math.h>
 
 int *getMinMaxPositionByAngle(int angle, int thermostat_radius) {
