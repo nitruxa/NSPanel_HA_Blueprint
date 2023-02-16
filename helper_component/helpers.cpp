@@ -1,7 +1,10 @@
 /* climate_helpers.c */
 
-#include "climate_helpers.h"
+#include "helpers.h"
 #include <math.h>
+
+namespace esphome {
+namespace ns_panel_ha_blueprint_helper {
 
 int *getMinMaxPositionByAngle(int angle, int thermostat_radius) {
   static int r[2] = {0, 0};
@@ -115,3 +118,6 @@ int *getCoordinatesByTemperature(float temperature, float minT, float maxT,
 
   return r;
 }
+
+} // namespace ns_panel_ha_blueprint_helper
+} // namespace esphome

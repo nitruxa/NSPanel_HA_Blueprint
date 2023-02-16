@@ -1,5 +1,8 @@
-#ifndef _CLIMATE_HELPERS_H
-#define _CLIMATE_HELPERS_H
+#pragma once
+#include <math.h>
+
+namespace esphome {
+namespace ns_panel_ha_blueprint_helper {
 
 int *getMinMaxPositionByAngle(int, int);
 float getAngle(int[], int[]);
@@ -9,4 +12,5 @@ float getTemperature(float, int, int, float);
 int *getCoordinatesOnThermostat(int, int, int, int, int);
 int *getCoordinatesByTemperature(float, float, float, int, int, int);
 
-#endif
+} // namespace ns_panel_ha_blueprint_helper
+} // namespace esphome
